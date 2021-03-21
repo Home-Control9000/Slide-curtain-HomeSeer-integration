@@ -1,10 +1,10 @@
 # Slide-curtain-HomeSeer-integration
 
-I wanted to integrate the Slide smart WIFI curtains from this Dutch company: https://nl.slide.store/ in my HomeSeer homeautomation system. 
-The advantages is that you can install it easy on your existing curtainsliders. The instructions are clear and easy.  
+I wanted to integrate the Slide smart WIFI curtains from this Dutch company: https://nl.slide.store/ in my HomeSeer HomeAutomation system. 
+The advantages is that you can install it very easy on your existing curtainsliders. The instructions are clear and easy.  
 
-The first step is to activate the Slide with the Android/Ios APP and follow all instructions before using the local control. 
-If the Slide is working with the APP then continue.
+The first step is to activate the Slide with the Android/iOS APP. **Follow all instructions and setup/test the Slide before using the local control.** 
+Then continue:
 
 The APP is working with a Cloud connection but local control is more reliable and faster because communication between HomeSeer and Slide is directly without Internet cloudservices.
 I integrated this in my HS4 HomeSeer system but it will also run on HS3 systems and with some adjustments on other HomeAutomation systems. 
@@ -13,8 +13,10 @@ HomeSeer is working with plugins but there is no one for Slide. The solution is 
 Procedure:
 The guys from Slide build a local API. 
 You can activate it by sending a 'joining the Slide Beta Program' request to support@slide.store
-The local API is activated and you will receive a 'Getting started document and some Postman JSON examples.
-[Slide API documentation](Local_API_documentation.zip)
+The local API is activated and you will receive a 'Getting started document and some Postman JSON examples. 
+
+I dont share this because they dont want this. So wait for your documents.
+'We kindly request that you do not share these files with other people until we are fully ready to publish the local API documentation online. :-)'
 
 Note:
 IF YOU ACTIVATE THE LOCAL API THEN THE SLIDE APP DOESN'T WORK ANYMORE. This will be solved in the future the company says.
