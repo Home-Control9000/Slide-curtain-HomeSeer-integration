@@ -9,5 +9,5 @@ The guys from Slide build a local API.
 You can activate it by request joining the Slide Beta Program by sending a E-mail to support@slide.store
 You will receive a 'Getting started document and some Postman JSON examples. 
 
-[a relative link](Local API documentation.zip)
+[API documentation](Local API documentation.zip)
 
