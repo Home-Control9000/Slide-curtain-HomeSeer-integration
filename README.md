@@ -22,13 +22,13 @@ If you want, you can switch very easy to local and back to cloudcontrol (APP) if
 
 The actually control is done with a curl script. So this solution you can use also in other Homeautomation systems. You can run HomeSeer on Windows and Linux. Im running Ubuntu (Linux) buth the curl command is also avaialble for Windows. Please read the HomeSeer manual for this.
 
-This will OPEN the curtains:
+**This will OPEN the curtains:**
 curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0 }'
 
-This will complete CLOSE the curtains:
+**This will complete CLOSE the curtains:**
 curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 1 }'
 
-This will HALF CLOSE the curtains:
+**This will HALF CLOSE the curtains:**
 curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0.5 }'
 
 HomeSeer Example for Curtain CLOSE/OPEN:
