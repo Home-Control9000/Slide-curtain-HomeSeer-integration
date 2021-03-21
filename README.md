@@ -2,13 +2,14 @@
 
 I bought a Slide smart WIFI curtain by this Dutch company: https://nl.slide.store/
 You can control it with a APP on Android and IOS (iPhone) devices.
-This is done with a Cloud connection which is working well but i needed local control because this is more reliable and faster.
+This is done with a Cloud connection which is working well but i needed local control from my homeautomation system because this is more reliable and faster.
+I integrated this in my HS4 HomeSeer system but it will also run on HS3 systems. 
 
 The guys from Slide build a local API. 
-You can activate it by request joining the Slide Beta Program by sending a E-mail to support@slide.store:
-You will receive a 'Getting started document and some Postma JSON examples
+You can activate it by request joining the Slide Beta Program by sending a E-mail to support@slide.store
+You will receive a 'Getting started document and some Postman JSON examples.
 
-
+--
 Slide Local API (Beta)
 
 Getting started
@@ -50,6 +51,8 @@ Planned features of the Local API
 3.	A unique hostname for each Slide, possibly using the user-defined Device Name prefixed by ‘Slide –‘
 4.	The ability to enable/disable Touch&Go through the Local API
 5.	Eventually running the Local API with the Cloud API. This may require running the Local API over MQTT as a protocol, which would mean it is not backward compatible with the current version. 
+--
+
 
 
 
