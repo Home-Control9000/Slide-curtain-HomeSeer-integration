@@ -25,17 +25,17 @@ The actually control is done with a curl script. So this solution you can use al
 **This will OPEN the curtains:**
 curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0 }'
 
-**This will complete CLOSE the curtains:**
+**This will CLOSE the curtains:**
 curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 1 }'
 
-**This will HALF CLOSE the curtains:**
+**This will HALF CLOSE the curtains: Adjust the "pos" value for other percentage**
 curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0.5 }'
 
 HomeSeer Example for Curtain CLOSE/OPEN:
 
 Notes:
 -	Fill in your own Device Code by ‘user:’
--	Im using ‘slide’ as hostname. You can also directly use the IP adress from the Slide. Use DHCP reservation in your router so the IP adress is never changed. Read the manual from your router howto.
+-	Im using ‘slide’ as hostname. You can also directly use the IP adress from your Slide. Use DHCP reservation in your router so the IP adress is never changed. Read the manual from your router howto.
 - In the HomeSeer example only OPEN and CLOSE is done. You can open partially by { "pos": 0.5 } (50%) or the value you want. Then you have to add dome more HomeSeer devices. 
 
 
