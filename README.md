@@ -37,6 +37,7 @@ curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 
 curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0.5 }'
 
 HomeSeer Example for Curtain CLOSE/OPEN:
+[HomeSeer example](./HomeSeer-Slide-Integration-Example.pdf)
 
 Notes:
 -	Fill in your own Device Code by ‘user:’
