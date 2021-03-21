@@ -11,5 +11,5 @@ You will receive a 'Getting started document and some Postman JSON examples.
 
 [Kink naar test](test.txt)
 
-[API documentation](test.txt)
+[API documentation](Local_API_documentation.zip)
 
