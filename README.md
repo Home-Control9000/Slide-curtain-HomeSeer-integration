@@ -28,13 +28,13 @@ I don't use the Slide APP anymore. Slide Control is always done with my HomeSeer
 The actually control is done with a simple curl script. This you can use also in other HomeAutomation systems. You can run HomeSeer on Windows and Linux. Im running Ubuntu (Linux) buth the curl command is also avaialble for Windows. Please read the HomeSeer manual for this.
 
 **This will OPEN the curtains:**
-curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0 }'
+curl --location --request POST 'IP/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0 }'
 
 **This will CLOSE the curtains:**
-curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 1 }'
+curl --location --request POST 'IP/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 1 }'
 
 **This will HALF CLOSE the curtains: Adjust the "pos" value for other percentage**
-curl --location --request POST '<IP-adress>/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0.5 }'
+curl --location --request POST 'IP/rpc/Slide.SetPos' \ --digest --user 'user:xxxxxxx' \ --header 'Content-Type: application/json' \ --header 'Content-Type: text/plain' \ --data-raw '{ "pos": 0.5 }'
 
 HomeSeer Example for Curtain CLOSE/OPEN:
 [HomeSeer example](./HomeSeer-Slide-Integration-Example.pdf)
